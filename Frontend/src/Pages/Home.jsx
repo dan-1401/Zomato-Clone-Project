@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import HeroSection from '../Components/HeroSection';
-import Card from '../components/Card';
+import Card from '../Components/Card';
 import Footer from '../Components/Footer';
 
 const Home = () => {

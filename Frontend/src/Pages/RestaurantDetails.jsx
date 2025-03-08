@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Card from '../components/Card';  // If Home.jsx is inside Pages/
-
 
 const RestaurantDetails = () => {
     const { id } = useParams();
@@ -37,11 +35,11 @@ const RestaurantDetails = () => {
         <div
             className="restaurant-details-page d-flex align-items-center justify-content-center"
             style={{
-                backgroundImage: `url('resdet.jpg')`, // Replace with your image URL
+                backgroundImage: `url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '100vh',
-            }}  
+            }}
         >
             <div className="container my-5">
                 <button className="btn btn-secondary mb-3" onClick={() => navigate(-1)}>
