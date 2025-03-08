@@ -35,7 +35,7 @@ const RestaurantDetails = () => {
         <div
             className="restaurant-details-page d-flex align-items-center justify-content-center"
             style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')`,
+                backgroundImage: `url('resdet.jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '100vh',
