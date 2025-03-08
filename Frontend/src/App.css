@@ -1,0 +1,363 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.navbar .form-control {
+  width: 300px;
+}
+
+.navbar .btn {
+  margin-left: 10px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url('Res1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section form {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-section input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.dishes h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dishes ul {
+  padding-left: 0;
+}
+
+.dishes li {
+  list-style: none;
+  color: #888;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f8f9fa; /* Light background */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: black; /* Black text */
+  margin: 0;
+}
+
+/* Login and Signup Page Styles */
+.login-page, .signup-page {
+  background-image: url('https://via.placeholder.com/1500');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page .card, .signup-page .card {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.login-page h1, .signup-page h1 {
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-page .form-control, .signup-page .form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+
+.login-page .form-control:focus, .signup-page .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-page .btn, .signup-page .btn {
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-page .btn-primary, .signup-page .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.login-page .btn-primary:hover, .signup-page .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Cart Page Styles */
+.cart-page {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.cart-page .card {
+  margin-bottom: 20px;
+}
+
+.cart-page .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.cart-page .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.cart-page .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.cart-page .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.cart-page .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.cart-page .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .hero-section h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-section p {
+      font-size: 1.2rem;
+  }
+
+  .hero-section input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .hero-section button {
+      width: 100%;
+  }
+
+  .card {
+      margin-bottom: 20px;
+  }
+
+  .login-page .card, .signup-page .card {
+      width: 90%;
+  }
+}
+/* Cart Page Styles */
+.cart-page {
+  background-image: url('"C:\Users\danis\Desktop\Zomato Clone Project\Frontend\public\Res11.jpg"'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cart-page h1, .cart-page .text-center {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cart-page .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-page .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.cart-page .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.cart-page .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.cart-page .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.cart-page .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.cart-page .btn-success:hover {
+  background-color: #218838;
+}
+/* Restaurant Details Page Styles */
+.restaurant-details-page {
+  background-image: url('food.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.restaurant-details-page h1 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.restaurant-details-page .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.restaurant-details-page .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.restaurant-details-page .btn-primary:hover {
+  background-color: #0056b3;
+}
