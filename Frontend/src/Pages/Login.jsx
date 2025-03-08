@@ -14,7 +14,7 @@ const Login = ({ setIsLoggedIn }) => {
         console.log("Attempting login with:", email, password); // Debugging line
     
         try {
-            const response = await axios.post("http://localhost:3000/login", { email, password });
+            const response = await axios.post("https://tastynest.onrender.com", { email, password });
     
             console.log("Login response:", response.data); // Debugging line
     
