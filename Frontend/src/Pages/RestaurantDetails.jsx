@@ -5,14 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const RestaurantDetails = () => {
     const { id } = useParams();
-    const navigate = useNavigate();
-    const isAuthenticated = localStorage.getItem("token"); // Check if user is logged in
-
-    useEffect(() => {
-        if (!isAuthenticated) {
-            navigate("/signup");
-        }
-    }, [isAuthenticated, navigate]);
+    const navigate = useNavigate(); 
+    
 
     const dishes = [
         { id: 1, name: 'Pizza', price: 299 },
